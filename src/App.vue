@@ -3,7 +3,7 @@
  * @Author: 笙痞
  * @Date: 2022-10-13 16:07:57
  * @LastEditors: 不浪 897411954@qq.com
- * @LastEditTime: 2025-04-28 21:42:43
+ * @LastEditTime: 2025-05-25 17:41:29
 -->
 <script setup>
 import { onMounted } from "vue";
@@ -12,7 +12,7 @@ import CesiumTerrainProviderEdit from "./utils/cesiumCtrl/flat/CesiumTerrainProv
 import { getcameraInfo } from "@/utils/cesiumCtrl/getCameraInfo.js";
 
 Cesium.Ion.defaultAccessToken =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxYWE5M2QzNy1hNGFjLTQ3YzItYmU0ZS05MDkyODc1MzVhNzAiLCJpZCI6MTE1MDQwLCJpYXQiOjE2Njg1OTA2NDh9.oW-_utGumUSPqYzlWGjhG8hbda-b4UxZdL0_2t4ASig";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyMjBhMzcxMC0wNjBiLTRmYjItYjY1MC0wMzAwMzMyMGUyMmEiLCJpZCI6MzAzNzc3LCJpYXQiOjE3NDc2Mzk0NTV9.E_90aKtVdzRGlU2z48VwJ4mWvl-uuDkfQBCOO6zbzn4";
 
 onMounted(() => {
   init();
