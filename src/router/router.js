@@ -3,7 +3,7 @@
  * @Author: 笙痞
  * @Date: 2022-10-13 16:54:33
  * @LastEditors: 不浪 897411954@qq.com
- * @LastEditTime: 2025-04-27 11:02:22
+ * @LastEditTime: 2025-05-05 20:54:48
  */
 const EmptyRouterView = () =>
   import("@/views/routerViews/emptyRouterViews.vue");
@@ -213,6 +213,15 @@ const routes = [
           activePath: "/material/wallPolygonDiffuse",
         },
       },
+      {
+        path: "sea",
+        name: "material_sea",
+        component: () => import("@/views/material/sea.vue"),
+        meta: {
+          title: "动态海洋水",
+          activePath: "/material/sea",
+        },
+      },
     ],
   },
   {
@@ -355,6 +364,15 @@ const routes = [
         meta: {
           title: "可视域分析",
           activePath: "/analysis/visibleRange",
+        },
+      },
+      {
+        path: "cutAndFill",
+        name: "analysis_cutAndFill",
+        component: () => import("@/views/analysis/cutAndFill.vue"),
+        meta: {
+          title: "方量分析",
+          activePath: "/analysis/cutAndFill",
         },
       },
     ],
