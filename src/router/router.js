@@ -3,7 +3,7 @@
  * @Author: 笙痞
  * @Date: 2022-10-13 16:54:33
  * @LastEditors: 不浪 897411954@qq.com
- * @LastEditTime: 2025-05-05 20:54:48
+ * @LastEditTime: 2025-06-08 11:21:51
  */
 const EmptyRouterView = () =>
   import("@/views/routerViews/emptyRouterViews.vue");
@@ -499,6 +499,15 @@ const routes = [
         meta: {
           title: "卫星轨道czml",
           activePath: "/models/czml",
+        },
+      },
+      {
+        path: "s3m",
+        name: "models_s3m",
+        component: () => import("@/views/models/s3m.vue"),
+        meta: {
+          title: "超图s3m",
+          activePath: "/models/s3m",
         },
       },
     ],
