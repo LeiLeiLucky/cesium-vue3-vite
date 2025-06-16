@@ -3,7 +3,7 @@
  * @Author: 笙痞
  * @Date: 2022-10-13 16:07:57
  * @LastEditors: 不浪 897411954@qq.com
- * @LastEditTime: 2025-05-25 17:41:29
+ * @LastEditTime: 2025-06-15 21:14:04
 -->
 <script setup>
 import { onMounted } from "vue";
@@ -20,7 +20,7 @@ onMounted(() => {
 const init = () => {
   const viewer = new Cesium.Viewer("cesiumContainer", {
     infoBox: false,
-    timeline: false, // 是否显示时间线控件
+    // timeline: false, // 是否显示时间线控件
     // imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
     //   url: "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
     // }),

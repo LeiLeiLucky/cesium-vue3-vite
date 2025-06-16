@@ -1,9 +1,11 @@
+import { meta } from "@turf/turf";
+
 /*
  * @Descripttion:
  * @Author: 笙痞
  * @Date: 2022-10-13 16:54:33
  * @LastEditors: 不浪 897411954@qq.com
- * @LastEditTime: 2025-06-08 11:21:51
+ * @LastEditTime: 2025-06-14 09:19:22
  */
 const EmptyRouterView = () =>
   import("@/views/routerViews/emptyRouterViews.vue");
@@ -220,6 +222,15 @@ const routes = [
         meta: {
           title: "动态海洋水",
           activePath: "/material/sea",
+        },
+      },
+      {
+        path: "volumRadar",
+        name: "material_volumRadar",
+        component: () => import("@/views/material/volumRadar.vue"),
+        meta: {
+          title: "立体雷达扫描",
+          activePath: "/material/volumRadar",
         },
       },
     ],
@@ -508,6 +519,15 @@ const routes = [
         meta: {
           title: "超图s3m",
           activePath: "/models/s3m",
+        },
+      },
+      {
+        path: "photography",
+        name: "models_photography",
+        component: () => import("@/views/models/photography.vue"),
+        meta: {
+          title: "倾斜摄影",
+          activePath: "/models/photography",
         },
       },
     ],
